@@ -1,0 +1,129 @@
+:root{
+    --lightgray {
+        background-color: #acb7be;
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: end; */
+    align-items: baseline;
+    height: 4rem;
+    background-color: #acb7be;
+    color: white;
+    flex-wrap: nowrap;
+    opacity: 70%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* padding: .5rem;
+    margin: .5rem; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid black;
+    opacity: 90%;
+}
+
+.brand {
+    /* font-size: 2rem; */
+    align-self: center;
+    padding: .5rem;
+    /* width: 7rem; */
+    /* max-width: 100%; */
+    max-height: 100%;
+    margin-left: .5rem;
+    background-size: contain;
+    background-image: url(./images/wspeakman-low-resolution-logo-color-on-transparent-background.png);
+    flex: 0 0 7rem;
+}
+
+.buffer {
+    /* height: 2rem; */
+    flex: 1;
+    /* background-size: contain; */
+    /* background-image: url(./images/wspeakman-low-resolution-logo-color-on-transparent-background.png); */
+}
+
+/* .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5rem;
+    margin: .5rem;
+} */
+
+.navbar div {
+    padding: .5rem;
+    height: 2rem;
+    align-self: center;
+}
+
+.navbar a {
+    color: black;
+    padding: .5;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 1.5rem;
+    opacity: 100%;
+    flex: 0;
+}
+
+.navbar a:hover {
+background-color: white;
+color: black;
+}
+
+.hero {
+    background-size: cover;
+    width: 100%;
+    top: 5rem;
+    height: 20rem;
+    background-image: url(./images/WallpaperDog-5554822.jpg);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+#about {
+    height: 55rem;
+    width: 70%;
+    background-color: #acb7be;
+    border: 2px solid black;
+    margin: .5rem;
+    border-radius: 10px;
+    
+}
+
+#services {
+
+    height: 55rem;
+    background-color: var(--lightgray);
+    
+
+}
+
+#projects {
+    height: 55rem;
+    background-color: var(--lightgray);
+
+
+}
+
+ 
