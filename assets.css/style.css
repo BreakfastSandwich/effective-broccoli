@@ -71,6 +71,7 @@ nav {
     padding: .5rem;
     height: 2rem;
     align-self: center;
+    
 }
 
 .navbar a {
@@ -81,17 +82,20 @@ nav {
     font-size: 1.5rem;
     opacity: 100%;
     flex: 0;
+
 }
 
 .navbar a:hover {
 background-color: white;
 color: black;
+height: 100%;
+width: 100#;
 }
 
 .hero {
     background-size: cover;
     width: 100%;
-    top: 5rem;
+    margin-top: 4rem;
     height: 20rem;
     background-image: url(./images/WallpaperDog-5554822.jpg);
 }
@@ -99,31 +103,67 @@ color: black;
 .main {
     display: flex;
     flex-direction: column;
+    /* background-color: #acb7be; */
+    /* background-image: url(./images/WallpaperDog-5554822.jpg);
+    background-size: cover;
+    max-height: fit-content; */
+    /* background-color: #d6f4ed; */
+
 }
 
-#about {
+.about{
+    display: flex;
+    flex-direction: row;
+}
+
+#about-main {
     height: 55rem;
     width: 70%;
     background-color: #acb7be;
     border: 2px solid black;
     margin: .5rem;
     border-radius: 10px;
-    
+    }
+#about-aside{
+    height: 55rem;
+    width: 30%;
+    background-color: #acb7be;
+    border: 2px solid black;
+    margin: .5rem;
+    border-radius: 10px;
 }
 
 #services {
 
     height: 55rem;
-    background-color: var(--lightgray);
+    /* width: 100%; */
+    /* background-color: #d6f4ed; */
+    border: 2px solid black;
+    margin: .5rem;
+    border-radius: 10px;
+    background-color: #acb7be;
+
     
 
 }
 
 #projects {
     height: 55rem;
-    background-color: var(--lightgray);
-
+    /* width: 100%; */
+    background-color: #acb7beab;
+    border: 2px solid black;
+    margin: .5rem;
+    border-radius: 10px;
+/* opacity: 80%; */
 
 }
 
- 
+#contact {
+    height: 15rem;
+    /* width: 97%; */
+    background-color: #acb7beab;
+    /* border: 2px solid black; */
+    margin: .5rem;
+    border-radius: 10px;
+    /* opacity: 80%; */
+} 
