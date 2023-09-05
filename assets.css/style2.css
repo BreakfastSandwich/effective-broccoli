@@ -1,0 +1,202 @@
+:root {
+    --darkgrey: #272727;
+    --darkbluegreen: #1981b4;
+    --Lightgrey: #acb7beac;
+    --bluegreen: #4bbcf4;
+  }
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+
+
+}
+
+.header {
+    background-color: var(--Lightgrey);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: var(--darkbluegreen);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    border-bottom: 3px solid var(--Lightgrey);
+}
+
+.brand{
+    font-size: 2rem;
+    margin: .75rem;
+}
+
+.navbar-links ul {
+margin: 0%;
+padding: 0%;
+display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--darkbluegreen);
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    /* background-color: blue; */
+    box-shadow: inset 0px 0px 18px var(--darkbluegreen), 0 0 15px var(--bluegreen);
+    border-radius: 3px;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--darkbluegreen);
+    border-radius: 10px;
+}
+
+@media (max-width: 550px) {
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .about {
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+    }
+
+    #about-main {
+        flex: 1 1 75%;
+    }
+
+    #about-aside {
+        flex: 1 1 75%;
+    }
+}
+
+
+
+.hero {
+    background-size: cover;
+    width: 100%;
+    margin-top: 3.75rem;
+    height: 20rem;
+    background-image: url(./images/WallpaperDog-5554822.jpg);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #acb7be; */
+    /* background-image: url(./images/WallpaperDog-5554822.jpg);
+    background-size: cover;
+    max-height: fit-content; */
+    /* background-color: #d6f4ed; */
+    flex-wrap: wrap;
+    background-color: black;
+
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+}
+
+#about-main {
+    height: 55rem;
+    flex: 1 1 70%;
+    background-color: var(--Lightgrey);
+    border: 2px solid var(--darkbluegreen);
+    margin: .5rem;
+    border-radius: 10px;
+    }
+#about-aside{
+    height: 55rem;
+   flex: 1 1 30%;
+    background-color: var(--Lightgrey);
+    border: 2px solid var(--darkbluegreen);
+    margin: .5rem;
+    border-radius: 10px;
+}
+
+#services {
+
+    height: 55rem;
+    border: 2px solid var(--darkbluegreen);
+    margin: .5rem;
+    border-radius: 10px;
+    background-color: var(--Lightgrey);
+    display: flex;
+
+    
+
+}
+
+#projects {
+    height: 55rem;
+    background-color: var(--Lightgrey);
+    border: 2px solid var(--darkbluegreen);
+    margin: .5rem;
+    border-radius: 10px;
+    display: flex;
+
+}
+
+#contact {
+    height: 15rem;
+    background-color: var(--Lightgrey);
+    border: 2px solid var(--darkbluegreen);
+    margin: .5rem;
+    border-radius: 10px;
+    display: flex;
+} 
