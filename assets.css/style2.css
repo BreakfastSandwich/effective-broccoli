@@ -90,7 +90,7 @@ display: flex;
     }
 
     .navbar-links{
-        display: none;
+        /* display: none; */
         align-items: flex-start;
         width: 100%;
     }
@@ -167,7 +167,10 @@ display: flex;
     border: 2px solid var(--darkbluegreen);
     margin: .5rem;
     border-radius: 10px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
     }
+    
 #about-aside{
     height: 55rem;
    flex: 1 1 30%;
@@ -175,19 +178,21 @@ display: flex;
     border: 2px solid var(--darkbluegreen);
     margin: .5rem;
     border-radius: 10px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 #services {
 
     height: 55rem;
     border: 2px solid var(--darkbluegreen);
-    margin: 2.5rem;
+    margin: .5rem;
     border-radius: 10px;
     background-color: var(--Lightgrey);
     display: flex;
     /* position: relative; */
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
     display: flex;
 
 }
@@ -219,6 +224,8 @@ display: flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, lfr));
     gap: 1rem; */
     padding-bottom: 2rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .projects {
@@ -231,6 +238,8 @@ display: flex;
     margin: .5rem;
     border-radius: 10px;
     padding-bottom: 2rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .card {
@@ -290,4 +299,6 @@ display: flex;
     margin: .5rem;
     border-radius: 10px;
     display: flex;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 } 
