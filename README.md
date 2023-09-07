@@ -8,3 +8,5 @@ In this project you will find the page is responsive to resizing with a screen b
 
 I hope you enjoy :)
 
+
+![image](https://github.com/BreakfastSandwich/effective-broccoli/assets/143359791/a21d6fcd-18d4-4061-8424-57f009bbd18f)
