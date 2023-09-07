@@ -134,16 +134,10 @@ display: flex;
         width: 100%;
         justify-content: center;
         flex-direction: column;
+     
     }
 
-    #about {
-        flex-wrap: wrap;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        flex-direction: column;
-    }
-
+    
     .card-grid{
         display: flex;
         flex-direction: column;
@@ -153,21 +147,25 @@ display: flex;
 
     #about-main {
         flex: 1 1 75%;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-direction: column;
+       
     }
 
     #about-main h2 {
+        flex-wrap: wrap;
         align-self: center;
+       
     }
 
     #about-aside {
         flex: 1 1 75%;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-direction: column;
     }
 
     #about-aside h2 {
+        flex-wrap: wrap;
         align-self: center;
     }
 
@@ -175,22 +173,18 @@ display: flex;
         flex-wrap: wrap;
         display: flex;
         flex: 1 1 70%;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-direction: column;
     }
 
     #services h2 {
-        
+        flex-wrap: wrap;
         align-self: center;
     }
     
-    .services {
-        display: flex;
-        flex-direction: column;
-    }
-
+   
     #services h2 {
-        
+        flex-wrap: wrap;
         align-self: center;
     }
 
@@ -212,7 +206,7 @@ display: flex;
         display: flex;
         flex: 1 1 70%;
         flex-direction: column;
-        flex: 1 1 70%;
+        justify-content: space-evenly;
     }
 
 
@@ -475,7 +469,7 @@ display: flex;
     margin-bottom: 1.25rem;
     box-shadow: 0 2px 5px 1px var(--darkbluegreen);
     box-sizing: border-box;
-    flex-direction: column;
+    flex-direction: row;
     padding: 2rem;
     justify-content: space-around;
 
@@ -520,6 +514,7 @@ display: flex;
     align-items: start;
     justify-content: center;
     align-content: center;
+    width: 300px;
 }
 
 .contact-info label:hover, .contact-info label:focus {
@@ -553,8 +548,9 @@ display: flex;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    flex: 0 1 20%;
+    flex: 0 1 300px;
     box-shadow: 0 2px 5px 1px var(--darkbluegreen);
+    width: 300px;
 }
 
 .contact form label{
@@ -565,4 +561,13 @@ flex-direction: column;
 .contact form #message {
     height: 4rem;
     text-align: start;
+}
+
+.contact form #submit{
+    background-color: var(--darkbluegreen);
+    box-shadow: inset 0px 0px 18px var(--darkbluegreen), 0 0 15px var(--bluegreen);
+    border-radius: 3px;    
+    width: 50px;
+    flex-wrap: wrap;
+    align-self: center;
 }
