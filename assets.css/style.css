@@ -1,5 +1,5 @@
 
-
+/* setting variables for later use */
 :root {
     --darkgrey: #272727;
     --darkbluegreen: #1981b4;
@@ -20,6 +20,8 @@
     
 }
 
+
+/* styling navbar and settting it to a fixed position */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -33,6 +35,7 @@
     box-shadow: 0 2px 5px 1px var(--darkbluegreen);
 }
 
+
 .brand{
     font-size: 2rem;
     margin: .75rem;
@@ -40,6 +43,7 @@
     
 }
 
+/* styling the navbar links */
 .navbar-links ul {
 margin: 0%;
 padding: 0%;
@@ -58,6 +62,8 @@ display: flex;
     font-size: 1.5rem;
 }
 
+/* setting hover changes */
+
 .navbar-links li:hover, .navbar-links li:focus {
     background-color: var(--darkbluegreen);
     box-shadow: inset 0px 0px 18px var(--darkbluegreen), 0 0 15px var(--bluegreen);
@@ -70,6 +76,8 @@ display: flex;
     box-shadow: inset 0px 0px 18px var(--darkbluegreen), 0 0 15px var(--bluegreen);
     border-radius: 3px;  
 }
+
+/* creating toggle button to be used in a responsive setting */
 
 .toggle-button{
     position: absolute;
@@ -90,6 +98,8 @@ display: flex;
 }
 
 
+/* creating responsiveness for screens under 1200px */
+
 @media (max-width: 1200px) {
     .toggle-button{
         display: flex;
@@ -98,7 +108,7 @@ display: flex;
     .name h1 {
         font-size: 1.5rem;
     }
-
+/* creating JS condidtions for toggle button during the "off" position */
     .hide {
         display: none;
     }
@@ -126,7 +136,7 @@ display: flex;
     .navbar-links li a {
         padding: .5rem 1rem;
     }
-    
+    /* creating JS condidtions for toggle button during the "on" position */
      .active {
         display: flex;
        
@@ -226,7 +236,7 @@ display: flex;
    
 }
 
-
+/* setting background image and style for the header section below the navbar */
 
 .hero {
     background-size: cover;
@@ -266,6 +276,8 @@ display: flex;
     margin-right: 5rem;
     border-radius: .25rem;
 }
+
+/* portrait image on hero section */
 
 .pic> img{
     display: block;
@@ -398,6 +410,8 @@ display: flex;
     flex-direction: column;
 }
 
+/* creating grid template for prodject cards */
+
 .card-grid{
     grid-template-columns: repeat(autofit, minmax(300px, 1fr));
     grid-template-rows: repeat(autofit, minmax(300px, 1fr));
@@ -421,6 +435,7 @@ display: flex;
 
 }
 
+/* creating "main" card */
 .card1{
     flex: 1 1 60%;
 }
@@ -431,6 +446,7 @@ display: flex;
     overflow: hidden;
 }
 
+/* styling card1 */
 .card-header1>img{
     display: block;
     width: 100%;
@@ -533,6 +549,8 @@ display: flex;
     align-self: flex-start;
     flex: 1 1 70%;
 }
+
+/* attempting to fix wrapping issue in the Contact section */
 
 #conact-me-wrapper{
     display: flex;

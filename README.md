@@ -7,3 +7,4 @@ In this project you will find the page is responsive to resizing with a screen b
 
 
 I hope you enjoy :)
+
