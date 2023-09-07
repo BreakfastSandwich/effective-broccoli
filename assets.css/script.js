@@ -1,7 +1,9 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarlinks = document.getElementsByClassName('navbar-links')[0]
-console.log("inside script file");
+const toggleButton = document.getElementsByClassName("toggle-button")[0]
+const navbarLinks = document.getElementsByClassName("navbar-links")[0]
+// console.log(navbar-Links);
 
-toggleButton.addEventListener('click', () => {
-    navbarlinks.classList.toggle('.active')
+toggleButton.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active")
+    navbarLinks.classList.toggle("hide")
+    console.log("taco")
 });

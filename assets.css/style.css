@@ -1,3 +1,5 @@
+
+
 :root {
     --darkgrey: #272727;
     --darkbluegreen: #1981b4;
@@ -15,6 +17,7 @@
 
 .header {
     background-color: var(--Lightgrey);
+    
 }
 
 .navbar {
@@ -26,7 +29,8 @@
     position: fixed;
     top: 0%;
     width: 100%;
-    border-bottom: 3px solid var(--Lightgrey);
+    border-bottom: 2px solid var(--Lightgrey);
+    box-shadow: 0 2px 5px 1px var(--darkbluegreen);
 }
 
 .brand{
@@ -51,6 +55,7 @@ display: flex;
     color: var(--darkbluegreen);
     padding: 1rem;
     display: block;
+    font-size: 1.5rem;
 }
 
 .navbar-links li:hover, .navbar-links li:focus {
@@ -89,8 +94,12 @@ display: flex;
         display: flex;
     }
 
+    .hide {
+        display: none;
+    }
+
     .navbar-links{
-        /* display: none; */
+
         align-items: flex-start;
         width: 100%;
     }
@@ -113,23 +122,68 @@ display: flex;
         padding: .5rem 1rem;
     }
     
-    .navbar-links.active {
+     .active {
         display: flex;
+       
     }
 
-    .about {
+    #about {
         flex-wrap: wrap;
         display: flex;
         width: 100%;
+        justify-content: center;
+    }
+
+    .card-grid{
+        display: flex;
+        flex-direction: column;
+        flex: wrap;
+        justify-content: center;
     }
 
     #about-main {
         flex: 1 1 75%;
+        justify-content: center;
+        flex-direction: column;
     }
 
     #about-aside {
         flex: 1 1 75%;
+        justify-content: center;
+        flex-direction: column;
     }
+
+    #services {
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card-footer{
+        flex-direction: column;
+    }
+
+    #about-main h2 {
+        align-self: center;
+    }
+
+    #about-main h2 {
+        align-self: center;
+    }
+
+    #services h2 {
+        
+        align-self: center;
+    }
+    #contact {
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+   
 }
 
 
@@ -138,9 +192,20 @@ display: flex;
     background-size: cover;
     width: 100%;
     margin-top: 3.75rem;
-    height: 20rem;
-    background-image: url(./images/WallpaperDog-5554822.jpg);
+    height: 100%;
+    overflow: hidden;
+    /* width: 200vh; */
+    /* background-image: url(./images/WallpaperDog-5554822.jpg); */
     border-bottom: .25rem solid var(--Lightgrey);
+    box-shadow: 0 2px 5px 1px var(--Lightgrey);
+
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 .main {
@@ -162,7 +227,8 @@ display: flex;
 }
 
 #about-main {
-    height: 55rem;
+    /* height: 55rem; */
+    min-height: 30rem;
     flex: 1 1 70%;
     background-color: var(--Lightgrey);
     border: 3px solid var(--darkbluegreen);
@@ -171,10 +237,19 @@ display: flex;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     box-shadow: 0 2px 5px 1px var(--darkbluegreen);
+    padding: 2rem;
+    display: flex;
     }
+
+#about-main h2 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+
+}
     
 #about-aside{
-    height: 55rem;
+    /* height: 55rem; */
+    min-height: 30rem;
    flex: 1 1 30%;
     background-color: var(--Lightgrey);
     border: 3px solid var(--darkbluegreen);
@@ -183,11 +258,18 @@ display: flex;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     box-shadow: 0 2px 5px 1px var(--darkbluegreen);
+    padding: 2rem;
+    display: flex;
+}
+
+#about-aside h2 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
 }
 
 #services {
-
-    height: 55rem;
+    /* height: 55rem; */
+    min-height: 30rem;
     border: 3px solid var(--darkbluegreen);
     margin: .5rem;
     border-radius: 10px;
@@ -198,25 +280,15 @@ display: flex;
     margin-bottom: 1.25rem;
     display: flex;
     box-shadow: 0 2px 5px 1px var(--darkbluegreen);
+    padding: 2rem;
 
 }
 
-/* this needs to be addressed */
-/* #Services-header{ */
-    position: absolute;
-    border: 2px solid var(--darkbluegreen);
-    border-radius: 10px;
-    height: 5rem;
-    width: 10rem;
-    text-align: center;
-    align-content: center;
-    background-color: black;
-    color: var(--bluegreen);
-    top: -1rem;
-    left: -1rem;
-    align-items: center;
-    flex-wrap: wrap;
+#services h2 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
 }
+
 
 #projects {
     /* height: 55rem; */
@@ -224,18 +296,21 @@ display: flex;
     border: 3px solid var(--darkbluegreen);
     margin: .5rem;
     border-radius: 10px;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, lfr));
-    gap: 1rem; */
     padding-bottom: 2rem;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     box-shadow: 0 2px 5px 1px var(--darkbluegreen);
+    padding: 2rem;
+   
+}
+
+#projects h2 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, lfr));
+   
     gap: 1rem;
     /* height: 55rem; */
     background-color: var(--Lightgrey);
@@ -246,6 +321,24 @@ display: flex;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     box-shadow: 0 2px 5px 1px var(--darkbluegreen);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.card-grid{
+    /* display: grid; */
+    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+    grid-template-rows: repeat(autofit, minmax(300px, 1fr));
+    width: 85%;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex: 0 1 85%;
+    align-self: center;
+   
 }
 
 .card {
@@ -255,7 +348,12 @@ display: flex;
     border-radius: .25rem;
     border: none;
     box-shadow: 0 2px 5px 0 var(--darkbluegreen);
+    flex: 1 1 40%;
 
+}
+
+.card1{
+    flex: 1 1 60%;
 }
 
 .card-header{
@@ -268,7 +366,13 @@ display: flex;
 .card-footer{
     margin-top: 1rem;
     font-size: .9rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 }
+
+
 
 .button{
     background-color: var(--bluegreen);
@@ -276,6 +380,13 @@ display: flex;
     padding: .5em .75em;
     border-radius: .25em;
     cursor: pointer;
+    box-sizing: border-box;
+  
+}
+
+.button a{
+    text-decoration: none;
+    /* font-family: var(--headerfont); */
 }
 
 .button:hover, .button:focus{
@@ -299,7 +410,7 @@ display: flex;
 }
 
 #contact {
-    height: 15rem;
+    height: auto;
     background-color: var(--Lightgrey);
     border: 3px solid var(--darkbluegreen);
     margin: .5rem;
@@ -308,4 +419,85 @@ display: flex;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     box-shadow: 0 2px 5px 1px var(--darkbluegreen);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: flex-start;
 } 
+
+#contact h2 {
+    padding: 2rem;
+    font-size: 2rem;
+    align-self: flex-start;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bluegreen);
+    flex: 0 1 25rem;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    box-shadow: 0 2px 5px 1px var(--darkbluegreen);
+    padding: 1rem;
+    border-radius: .25rem;
+    border: none;
+    font-weight: bolder;
+    color: var(--darkgrey);
+    padding: 2rem;
+    margin: 2rem;
+    align-items: start;
+    justify-content: center;
+}
+
+.contact-info label:hover, .contact-info label:focus {
+    background-color: var(--darkbluegreen);
+    box-shadow: inset 0px 0px 18px var(--darkbluegreen), 0 0 15px var(--bluegreen);
+    border-radius: 3px;    
+}
+
+.contact-info label a:hover, .contact-info label a:focus {
+    color: black;
+    background-color: var(--darkbluegreen);
+    box-shadow: inset 0px 0px 18px var(--darkbluegreen), 0 0 15px var(--bluegreen);
+    border-radius: 3px;  
+}
+
+.contact-info a {
+    color: var(--darkgrey);
+    text-decoration: none;
+    font-size: 1rem;
+    /* font-family: var(--headerfont); */
+   
+}
+
+.contact form {
+    flex-wrap: wrap;
+    align-self: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--bluegreen);
+    margin: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex: 0 1 25rem;
+    box-shadow: 0 2px 5px 1px var(--darkbluegreen);
+}
+
+.contact form label{
+flex-direction: column;
+
+}
+
+.contact form #message {
+    height: 4rem;
+    text-align: start;
+}
