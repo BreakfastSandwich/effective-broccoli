@@ -95,6 +95,10 @@ display: flex;
         display: flex;
     }
 
+    .name h1 {
+        font-size: 1.5rem;
+    }
+
     .hide {
         display: none;
     }
@@ -241,31 +245,38 @@ display: flex;
 }
 
 .name {
-    height: 10rem;
     background-color: var(--bluegreen);
     color: var(--darkgrey);
     font-family: var(--headerfont);
-    font-size: 4rem;
     align-content: center;
     padding: 2rem;
     border-radius: .25rem;
     margin: 7rem;
-
+    text-align: center;
 }
+
+.name h2 {
+    font-size: 2rem;
+}
+
+
 
 .pic {
     overflow: hidden;
+    margin-right: 5rem;
+    border-radius: .25rem;
 }
 
-.pic img{
+.pic> img{
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    max-height: 20rem;
+    max-height: 15rem;
     object-position: center;
-    padding: 2rem;
-    border-radius: .25rem;
+    padding: 0%;
+    border-radius: .75rem;
+    flex: 0 0 15rem;
 }
 
 
