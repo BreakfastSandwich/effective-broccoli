@@ -232,8 +232,42 @@ display: flex;
     overflow: hidden;
     border-bottom: .25rem solid var(--Lightgrey);
     box-shadow: 0 2px 5px 1px var(--Lightgrey);
+    display: flex;
+    justify-content:space-between;
+    background-image: url(./images/WallpaperDog-5554822.jpg);
+    box-sizing: border-box;
+    align-items: center;
 
 }
+
+.name {
+    height: 10rem;
+    background-color: var(--bluegreen);
+    color: var(--darkgrey);
+    font-family: var(--headerfont);
+    font-size: 4rem;
+    align-content: center;
+    padding: 2rem;
+    border-radius: .25rem;
+    margin: 7rem;
+
+}
+
+.pic {
+    overflow: hidden;
+}
+
+.pic img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    max-height: 20rem;
+    object-position: center;
+    padding: 2rem;
+    border-radius: .25rem;
+}
+
 
 .hero img{
     display: block;
