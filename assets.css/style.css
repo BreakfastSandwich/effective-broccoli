@@ -233,6 +233,13 @@ display: flex;
         flex-wrap: wrap;
         align-self: center;
     }
+
+    #contact-me-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
    
 }
 
